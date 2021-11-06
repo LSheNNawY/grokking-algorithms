@@ -7,6 +7,7 @@ for index in range(1, num + 1):
 print(fact)
 
 
+# factorial depends on stack
 def factorial(number):
     if number < 0:
         return
