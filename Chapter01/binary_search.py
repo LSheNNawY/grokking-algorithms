@@ -1,13 +1,13 @@
-def binary_search(list, needle):
+def binary_search(search_list, needle):
     low = 0
-    high = len(list) - 1
+    high = len(search_list) - 1
 
     while low <= high:
         mid = int((low + high) / 2)
-        if list[mid] == needle:
+        if search_list[mid] == needle:
             return mid
 
-        if list[mid] < needle:
+        if search_list[mid] > needle:
             high = mid - 1
         else:
             low = mid + 1

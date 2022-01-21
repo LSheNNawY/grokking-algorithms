@@ -10,7 +10,7 @@ print(list1.__class__)
 
 print(list1.pop(0), 'popped')  # pop mutate the original list (pop returns value popped)
 list1.append(11)  # append mutate the original list
-list1.insert(0, 222)  # append mutate the original list
+list1.insert(0, 222)  # insert mutate the original list
 print(list1.index(11), ' => index of 11')  # gets the first index of this value
 list1.sort()
 print(list1, "sorted")

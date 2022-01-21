@@ -16,8 +16,8 @@ def get_smallest_number(list_of_numbers):
 def generate_sorted_list_with_selection_sort(unsorted_list):
     sorted_list = []
     for index in range(len(unsorted_list)):
-        smallest = get_smallest_number(unsorted_list)
-        sorted_list.append(unsorted_list.pop(smallest))
+        smallest_index = get_smallest_number(unsorted_list)
+        sorted_list.append(unsorted_list.pop(smallest_index))
         print(unsorted_list, 'unsorted list')
 
     return sorted_list
